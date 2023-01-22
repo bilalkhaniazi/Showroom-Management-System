@@ -20,6 +20,7 @@ if(isset($_POST['add_to_cart'])){
 
 }
 
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +38,7 @@ if(isset($_POST['add_to_cart'])){
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
+
 <?php
 
 if(isset($message)){
@@ -46,7 +47,9 @@ if(isset($message)){
    };
 };
 
+
 ?>
+
 
 <?php include 'header2.php'; ?>
 
@@ -54,8 +57,14 @@ if(isset($message)){
 
 <section class="products">
 
-   <h1 class="heading">Latest Products</h1>
 
+<form action="" method="GET">
+   <input type="textbox" name="search" value="<?php if(isset($_GET['search'])){echo $_GET['search'];} ?>" class="form-control" placeholder="search data"/>
+   <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+   <h1 class="heading">Latest Products</h1>
+   
    <div class="box-container">
 
       <?php

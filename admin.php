@@ -87,6 +87,12 @@ if(isset($message)){
 
 <section>
 
+<form action="" method="GET">
+   <input type="textbox" name="search" value="<?php if(isset($_GET['search'])){echo $_GET['search'];} ?>" class="form-control" placeholder="search data"/>
+   <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+
 <form action="" method="post" class="add-product-form" enctype="multipart/form-data">
    <h3>Add a new Vehicle/Part</h3>
    <input type="text" name="p_name" placeholder="enter the vehicle/part" class="box" required>
@@ -94,6 +100,7 @@ if(isset($message)){
    <input type="file" name="p_image" accept="image/png, image/jpg, image/jpeg" class="box" required>
    <input type="submit" value="add the product" name="add_product" class="btn">
 </form>
+
 
 </section>
 
@@ -157,6 +164,8 @@ if(isset($message)){
       <input type="submit" value="update the prodcut" name="update_product" class="btn">
       <input type="reset" value="cancel" id="close-edit" class="option-btn">
    </form>
+
+
 
    <?php
             };
