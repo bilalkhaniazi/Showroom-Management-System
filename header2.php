@@ -5,7 +5,8 @@
       <a href="#" class="logo">THE CAR COMPANY</a>
 
       <nav class="navbar">
-         <a href="products.php">view products</a>
+         <a href="products.php">View Products</a>
+         <a href="logout.php">Logout</a>
       </nav>
 
       <?php

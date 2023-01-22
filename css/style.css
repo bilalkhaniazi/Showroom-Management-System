@@ -168,29 +168,30 @@ section{
 }
 
 .add-product-form{
-   max-width: 50rem;
    background-color: var(--bg-color);
+   margin:0 auto;
+   max-width: 50rem;
    border-radius: .5rem;
    padding:2rem;
-   margin:0 auto;
    margin-top: 2rem;
 }
 
 .add-product-form h3{
+   text-transform: uppercase;
+   color:var(--black);
+   text-align: center;
    font-size: 2.5rem;
    margin-bottom: 1rem;
-   color:var(--black);
-   text-transform: uppercase;
-   text-align: center;
+
 }
 
 .add-product-form .box{
+   background-color: var(--white);
+   color:var(--black);
    text-transform: none;
    padding:1.2rem 1.4rem;
    font-size: 1.7rem;
-   color:var(--black);
    border-radius: .5rem;
-   background-color: var(--white);
    margin:1rem 0;
    width: 100%;
 }

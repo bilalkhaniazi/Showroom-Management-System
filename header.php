@@ -5,7 +5,8 @@
       <a href="#" class="logo">THE CAR COMPANY</a>
 
       <nav class="navbar">
-         <a href="admin.php">add products</a>
+         <a href="admin.php">Add Vehicle/Parts</a>
+         <a href="logout.php">Logout</a>
       </nav>
 
       <?php
