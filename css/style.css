@@ -159,11 +159,12 @@ section{
    font-size: 2rem;
 }
 
-.menu-btn{
+#menu-btn{
    margin-left: 2rem;
    font-size: 3rem;
    cursor: pointer;
    color:var(--white);
+   display: none;
 }
 
 .add-product-form{
@@ -544,12 +545,12 @@ section{
 
 @media (max-width:768px){
 
-   .menu-btn{
+   #menu-btn{
       display: inline-block;
       transition: .2s linear;
    }
 
-   .menu-btn.fa-times{
+   #menu-btn.fa-times{
       transform: rotate(180deg);
    }
 

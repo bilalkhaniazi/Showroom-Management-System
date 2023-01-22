@@ -35,7 +35,7 @@ if(isset($_POST['order_btn'])){
          <h3>thank you for shopping!</h3>
          <div class='order-detail'>
             <span>".$total_product."</span>
-            <span class='total'> total : $".$price_total."/-  </span>
+            <span class='total'> total : Rs.".$price_total."/-  </span>
          </div>
          <div class='customer-details'>
             <p> your name : <span>".$name."</span> </p>
@@ -61,7 +61,7 @@ if(isset($_POST['order_btn'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>checkout</title>
+   <title>Checkout</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -78,7 +78,7 @@ if(isset($_POST['order_btn'])){
 
 <section class="checkout-form">
 
-   <h1 class="heading">complete your order</h1>
+   <h1 class="heading">Complete your order</h1>
 
    <form action="" method="post">
 
@@ -99,53 +99,53 @@ if(isset($_POST['order_btn'])){
          echo "<div class='display-order'><span>your cart is empty!</span></div>";
       }
       ?>
-      <span class="grand-total"> grand total : $<?= $grand_total; ?>/- </span>
+      <span class="grand-total"> Grand total : Rs.<?= $grand_total;?></span>
    </div>
 
       <div class="flex">
          <div class="inputBox">
-            <span>your name</span>
+            <span>Name</span>
             <input type="text" placeholder="enter your name" name="name" required>
          </div>
          <div class="inputBox">
-            <span>your number</span>
+            <span>Number</span>
             <input type="number" placeholder="enter your number" name="number" required>
          </div>
          <div class="inputBox">
-            <span>your email</span>
+            <span>E-mail</span>
             <input type="email" placeholder="enter your email" name="email" required>
          </div>
          <div class="inputBox">
-            <span>payment method</span>
+            <span>Payment Method</span>
             <select name="method">
-               <option value="cash on delivery" selected>cash on devlivery</option>
-               <option value="credit cart">credit cart</option>
-               <option value="paypal">paypal</option>
+               <option value="cash on delivery" selected>Cash On Devlivery</option>
+               <option value="credit cart">Credit Card</option>
+               <option value="paypal">PayPal</option>
             </select>
          </div>
          <div class="inputBox">
-            <span>address line 1</span>
+            <span>House/FLat</span>
             <input type="text" placeholder="e.g. flat no." name="flat" required>
          </div>
          <div class="inputBox">
-            <span>address line 2</span>
+            <span>Street/Area</span>
             <input type="text" placeholder="e.g. street name" name="street" required>
          </div>
          <div class="inputBox">
-            <span>city</span>
-            <input type="text" placeholder="e.g. mumbai" name="city" required>
+            <span>City</span>
+            <input type="text" placeholder="e.g. Lahore" name="city" required>
          </div>
          <div class="inputBox">
-            <span>state</span>
-            <input type="text" placeholder="e.g. maharashtra" name="state" required>
+            <span>State</span>
+            <input type="text" placeholder="e.g. Punjab" name="state" required>
          </div>
          <div class="inputBox">
-            <span>country</span>
-            <input type="text" placeholder="e.g. india" name="country" required>
+            <span>Country</span>
+            <input type="text" placeholder="e.g. Pakistan" name="country" required>
          </div>
          <div class="inputBox">
-            <span>pin code</span>
-            <input type="text" placeholder="e.g. 123456" name="pin_code" required>
+            <span>Zip Code</span>
+            <input type="text" placeholder="e.g. 54000" name="pin_code" required>
          </div>
       </div>
       <input type="submit" value="order now" name="order_btn" class="btn">

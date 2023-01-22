@@ -17,6 +17,14 @@
    padding-bottom: 60px;
 }
 
+#menu-btn{
+   margin-left: 2rem;
+   font-size: 3rem;
+   cursor: pointer;
+   color:var(--white);
+   display: none;
+}
+
 .container .content{
    text-align: center;
 }

@@ -27,11 +27,11 @@ if(!isset($_SESSION['user_name'])){
 <div class="container">
 
    <div class="content">
-      <h3>hi, <span>user</span></h3>
-      <h1>welcome <span><?php echo $_SESSION['user_name'] ?></span></h1>
-      <p>this is an user page</p>
+      <h3>Hi, <span>User</span></h3>
+      <h1>Welcome <span><?php echo $_SESSION['user_name'] ?></span></h1>
+      <p>This is the user page.</p>
       <a href="products.php" class="btn">View Products</a>
-      <a href="logout.php" class="btn">logout</a>
+      <a href="logout.php" class="btn">Logout</a>
    </div>
 
 </div>
